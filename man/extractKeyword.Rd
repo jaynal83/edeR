@@ -1,7 +1,7 @@
 \name{extractKeyword}
 \alias{extractKeyword}
 \title{
-is to extract emails with specified keyword in the subjectline
+Extracts email with specified keyword in the subject line
 }
 \description{
 This function email data with specific keyword in the subject line
