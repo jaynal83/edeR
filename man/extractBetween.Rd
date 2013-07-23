@@ -1,7 +1,7 @@
 \name{extractBetween}
 \alias{extractBetween}
 \title{
-is to extract eamil between date range
+Extracts eamil within given date range
 }
 \description{
 This function extracts email data from a specified folder with given date range.
