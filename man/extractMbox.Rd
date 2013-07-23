@@ -1,7 +1,7 @@
 \name{extractMbox}
 \alias{extractMbox}
 \title{
-is extracts emails from specified folder
+Extracts emails from specified folder
 }
 \description{
 This function extracts email data from a specified folder
