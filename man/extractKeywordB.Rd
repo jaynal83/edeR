@@ -1,7 +1,7 @@
 \name{extractKeywordB}
 \alias{extractKeywordB}
 \title{
-is to extract emails with specified keyword in the email body text
+Extracts email with specified keyword in the email body text
 }
 \description{
 This function extracts email data with specific keyword in the body message
