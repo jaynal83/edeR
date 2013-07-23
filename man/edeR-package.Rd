@@ -14,6 +14,8 @@ To access "Drafts" and "Sent Mail" we need to input the argument as "[Gmail]/Dra
 \tabular{ll}{
 Package: \tab edeR\cr
 Type: \tab Package\cr
+Depends: \tab rJava, rjson, rJython\cr
+System dependency: \tab Java runtime environment\cr
 Version: \tab 1.0.0\cr
 Date: \tab 2013-06-24\cr
 License: \tab GPL-2\cr
