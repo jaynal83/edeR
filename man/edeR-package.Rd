@@ -6,9 +6,9 @@
 Email data extraction using R
 }
 \description{
-Allows user to connect with email server through IMAP and extract email header information
+This package allows user to connect with Gmail server through IMAP and extract email header information
 from, to, cc, subject, and datetime. User can extract email data from any specific folder or label using the argument \code{folder}.
-To access "Drafts" and "Sent Mail" we need to input the argument as "[Gmail]/Drafts" and "[Gmail]/Sent Mail".
+To access "Drafts" and "Sent Mail" we need to input the argument as "[Gmail]/Drafts" and "[Gmail]/Sent Mail". Moreover user can search email with specific keyword in subject line or in emiail body message.
 }
 \details{
 \tabular{ll}{
