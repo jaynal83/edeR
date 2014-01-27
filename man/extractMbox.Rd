@@ -11,20 +11,20 @@ extractMbox(username, password, folder, nmail = -1)
 }
 \arguments{
   \item{username}{
- is the character string of email address for example, "xxx@gmail.com"
+ A character string of email address for example, "xxx@gmail.com"
 }
   \item{password}{
- is the character string of password of the email address for example "xyz123"
+ A character string of password of the email address for example "xyz123"
 }
   \item{folder}{
- is the character string of specific folder or label name from where the email data will be extracted
+ A character string of specific folder or label name from where the email data will be extracted
 }
   \item{nmail}{
- is the number of emails to extract, default is all emails (\code{nmail=-1})
+ An integer for the number of emails to extract, default is all emails (\code{nmail=-1})
 }
 }
 \details{
-This function allow users to extract email data from specified folder. By default this function will extract all available email
+This function allow users to extract email data from specified folder. By default this function will extract all available emails
 from the specified folder but user can restrict number of emails to extract using \code{nmail}.
 }
 \value{
