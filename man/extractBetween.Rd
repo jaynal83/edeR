@@ -4,34 +4,34 @@
 Extracts eamil within given date range
 }
 \description{
-This function extracts email data from a specified folder with given date range.
+This function extracts email data from a specified folder with given date range
 }
 \usage{
 extractBetween(username, password, folder, startDate, endDate, nmail = -1)
 }
 \arguments{
   \item{username}{
- is the character string of email address for example, "xxx@gmail.com"
+ A character string of email address for example, "xxx@gmail.com"
 }
   \item{password}{
- is the character string of password of the email address for example "xyz123"
+ A character string of password of the email address for example "xyz123"
 }
   \item{folder}{
- is the specific folder or label name from where the user wants to extract email data
+ A character string of folder or label name from where we want to extract email data
 }
   \item{startDate}{
- is the starting date ("DD-MM-YYYY" e.g "06-Jun-2013") of interest of the date range
+ A character starting of date (e.g "06-Jun-2013") of interest of the date range. The format of date should be same as shown in the example, any other format will give error 
 }
   \item{endDate}{
- is the end date ("DD-MM-YYYY" e.g. "06-Jun-2013" )of interest of the date range
+ A character string of end date (e.g. "06-Jun-2013")of interest of the date range
 }
   \item{nmail}{
- is the number of emails to extract, default is all emails (\code{nmail=-1})
+ An integer for the number of emails to extract, default is all emails (\code{nmail=-1})
 }
 }
 \details{
-This function is able to extract emails from any specified folder but to extract "Sent Mail" or "Drafts" we have to specify
-the argument little differently. To extract "Sent Mail", the argument is \code{folder="[Gmal]/Sent Mail"}
+This function is able to extract emails from any specified folder within a given date range. To extract "Sent Mail" or "Drafts" we have to specify
+the argument differently. To extract "Sent Mail", the argument is \code{folder="[Gmal]/Sent Mail"}
 }
 \value{
  \item{n_message}{Number of available email in the specified folder}
