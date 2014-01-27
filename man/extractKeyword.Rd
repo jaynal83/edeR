@@ -4,23 +4,23 @@
 Extracts email with specified keyword in the subject line
 }
 \description{
-This function email data with specific keyword in the subject line
+This function extracts email data with specific keyword in the subject line
 }
 \usage{
 extractKeyword(username, password, kw, nmail = -1)
 }
 \arguments{
   \item{username}{
- is the character string of email address for example, "xxx@gmail.com"
+ A character string of email address for example, "xxx@gmail.com"
 }
   \item{password}{
- is the character string of password of the email address for example "xyz123"
+ A character string of password of the email address for example "xyz123"
 }
   \item{kw}{
- is the character string of specific keyword that will be searched within subject line
+ A character string of specific keyword that will be searched within subject line
 }
   \item{nmail}{
- is the number of emails to extract, default is all emails (\code{nmail=-1})
+ An integer for the number of emails to extract, default is all emails (\code{nmail=-1})
 }
 }
 \details{
