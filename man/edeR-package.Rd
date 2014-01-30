@@ -16,7 +16,7 @@ Type: \tab Package\cr
 Depends: \tab rJava, rjson, rJython\cr
 System dependency: \tab Java runtime environment\cr
 Version: \tab 1.0.0\cr
-Date: \tab 2013-06-24\cr
+Date: \tab 2014-01-30\cr
 License: \tab GPL-2\cr
 }
 %~~ An overview of how to use the package, including the most important functions ~~
