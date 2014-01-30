@@ -46,7 +46,6 @@ Jaynal Abedin
 }
 \examples{
 # To extract maximum 5 emails with the word "predictive" within subject line
-library(edeR)
 dat <-extractKeyword(username="emaildataextraction@gmail.com",
                      password="emaildataextractionusingr",
                      kw="predictive",
