@@ -1,5 +1,4 @@
-\name{edeR-package}
-\alias{edeR-package}
+\name{edeR}
 \alias{edeR}
 \docType{package}
 \title{
@@ -37,7 +36,6 @@ Maintainer: Jaynal Abedin <joystatru@gmail.com>
 }
 \examples{
 # Extract maximum 5 emails from TSG folder
-library(edeR)
 dat1 <- extractMbox(username="emaildataextraction@gmail.com",
                     password="emaildataextractionusingr",
                     folder="TSG",
