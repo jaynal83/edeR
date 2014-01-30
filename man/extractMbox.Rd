@@ -47,7 +47,7 @@ To extract "Sent Mail", the argument is \code{folder="[Gmal]/Sent Mail"}
 }
 \examples{
 # Extract maximum 5 emails from TSG folder
-require(edeR)
+library(edeR)
 dat<-extractMbox(username="emaildataextraction@gmail.com",
                  password="emaildataextractionusingr",
                  folder="TSG",
