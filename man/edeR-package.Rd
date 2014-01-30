@@ -37,7 +37,7 @@ Maintainer: Jaynal Abedin <joystatru@gmail.com>
 }
 \examples{
 # Extract maximum 5 emails from TSG folder
-require(edeR)
+library(edeR)
 dat1 <- extractMbox(username="emaildataextraction@gmail.com",
                     password="emaildataextractionusingr",
                     folder="TSG",
