@@ -47,7 +47,6 @@ Jaynal Abedin
 }
 \examples{
 # To extract maximum 5 emails with the word "predictive" within body message
-library(edeR)
 dat <-extractKeywordB(username="emaildataextraction@gmail.com",
                       password="emaildataextractionusingr",
                       kw="predictive",
