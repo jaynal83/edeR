@@ -1,6 +1,5 @@
-\name{edeR-package}
-\alias{edeR-package}
-\alias(edeR)
+\name{edeR}
+\alias{edeR}
 \docType{package}
 \title{
 Email data extraction using R
