@@ -36,13 +36,13 @@ Maintainer: Jaynal Abedin <joystatru@gmail.com>
 }
 \examples{
 # Extract maximum 5 emails from TSG folder
-dat1 <- extractMbox(username="emaildataextraction@gmail.com",
+dat1 <- edeR:::extractMbox(username="emaildataextraction@gmail.com",
                     password="emaildataextractionusingr",
                     folder="TSG",
                     nmail=5)
 
 # To extract maximum of 5 emails from inbox between June 6, 2013 to June 6, 2013
-dat2 <- extractBetween(username="emaildataextraction@gmail.com",
+dat2 <- edeR:::extractBetween(username="emaildataextraction@gmail.com",
                        password="emaildataextractionusingr",
                        folder="inBoX",
                        startDate="06-Jun-2013",
@@ -50,12 +50,12 @@ dat2 <- extractBetween(username="emaildataextraction@gmail.com",
                        nmail=5)
 
 # To extract maximum 5 emails with the word "predictive" within subject line
-dat3 <-extractKeyword(username="emaildataextraction@gmail.com",
+dat3 <-edeR:::extractKeyword(username="emaildataextraction@gmail.com",
                       password="emaildataextractionusingr",
                       kw="predictive",
                       nmail=5)       
 # To extract maximum 5 emails with the word "predictive" within body message
-dat4 <-extractKeywordB(username="emaildataextraction@gmail.com",
+dat4 <-edeR:::extractKeywordB(username="emaildataextraction@gmail.com",
                        password="emaildataextractionusingr",
                        kw="predictive",
                        nmail=5)
