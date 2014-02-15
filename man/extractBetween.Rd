@@ -53,7 +53,7 @@ To extract "Sent Mail", the argument is \code{folder="[Gmal]/Sent Mail"}
 }
 \examples{
 # To extract maximum of 5 emails from inbox between June 6, 2013 to June 6, 2013
-dat <-extractBetween(username="emaildataextraction@gmail.com",
+dat <-edeR:::extractBetween(username="emaildataextraction@gmail.com",
                      password="emaildataextractionusingr",
                      folder="INBOX",
                      startDate="06-Jun-2013",
