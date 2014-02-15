@@ -1,4 +1,7 @@
 import("rJava")
 import("rjson")
 import("rJython")
-export(extractMbox,extractBetween,extractKeyword,extractKeywordB)
+export(extractMbox)
+export(extractBetween)
+export(extractKeyword)
+export(extractKeywordB)
