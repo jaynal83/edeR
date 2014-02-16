@@ -4,6 +4,7 @@ To check tar file for CRAN, R CMD --as --cran <pgkname_versioin.tar.gz>
 http://cran.r-project.org/web/packages/policies.html
 ftp://cran.r-project.org/incoming/
 http://cran.r-project.org/submit.html
+http://adv-r.had.co.nz/Release.html
 
 Need to include folder name in extractKeyword function
 Need to develop function for specific date only
