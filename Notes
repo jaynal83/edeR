@@ -1,6 +1,7 @@
 To build package in tar file R CMD build <pkgname>
 To build zip file R CMD INSTALL --build <pkgname>
 To check tar file for CRAN, R CMD --as --cran <pgkname_versioin.tar.gz>
+http://cran.r-project.org/web/packages/policies.html
 
 Need to include folder name in extractKeyword function
 Need to develop function for specific date only
