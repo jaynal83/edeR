@@ -32,9 +32,6 @@ from the specified folder but user can restrict number of emails to extract usin
  \item{data}{The extracted data frame with the field unique id (uid), sender (from), receiver either direct or cc'd (to), 
   subject of mail (subj), time stamp (datetime)}
 }
-\references{
-%Right now no reference
-}
 \author{
 Jaynal Abedin
 }
