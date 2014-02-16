@@ -31,16 +31,9 @@ Extracts emails with exact keyword \code{kw} in the subject line
  \item{data}{The extracted data frame with the field unique id (uid), sender (from), receiver either direct or cc'd (to), 
   subject of mail (subj), time stamp (datetime)}
 }
-\references{
-%right now no reference
-}
 \author{
 Jaynal Abedin
 }
-\note{
-%Need to include not if any
-}
-
 \seealso{
 \code{\link{extractKeywordB}}
 }
