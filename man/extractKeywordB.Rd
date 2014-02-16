@@ -31,16 +31,9 @@ Extracts emails matching the exact keyword \code{kw} in the body message
  \item{data}{The extracted data frame with the field unique id (uid), sender (from), receiver either direct or cc'd (to), 
   subject of mail (subj), time stamp (datetime)}
 }
-\references{
-%right now no reference
-}
 \author{
 Jaynal Abedin
 }
-\note{
-%note need to include if any
-}
-
 
 \seealso{
 \code{\link{extractKeyword}}
