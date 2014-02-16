@@ -26,14 +26,7 @@ Jaynal Abedin
 
 Maintainer: Jaynal Abedin <joystatru@gmail.com>
 }
-\references{
-%Right now no reference
-}
 \keyword{ package }
-\seealso{
-%~~ Optional links to other man pages, e.g. ~~
-%~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-}
 \examples{
 # Extract maximum 5 emails from TSG folder
 dat1 <- edeR:::extractMbox(username="emaildataextraction@gmail.com",
