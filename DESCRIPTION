@@ -2,7 +2,7 @@ Package: edeR
 Type: Package
 Title: Email Data Extraction Using R
 Version: 1.0.0
-Date: 2014-01-30
+Date: 2014-02-16
 Author: Jaynal Abedin,
 Maintainer: Jaynal Abedin <joystatru@gmail.com>
 Description: This package will allow to connect with email server through Internet Message Access Protocol (IMAP) and extract header information e.g. from, to, cc, subject, and datetime. User will supply their email address and password along with other options. Initially this package is developed only for Gmail. To run the functions from this package user have to have IMAP enabled Gmail account.
