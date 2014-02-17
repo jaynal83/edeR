@@ -38,7 +38,7 @@ Jaynal Abedin
 \code{\link{extractKeywordB}}
 }
 \examples{
-\donotrun{
+\dontrun{
 # To extract maximum 5 emails with the word "keyword" within subject line
 dat <-extractKeyword(username="username@gmail.com",
                      password="password",
