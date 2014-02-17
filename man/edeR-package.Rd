@@ -36,7 +36,7 @@ dat1 <- extractMbox(username="username@gmail.com",
                     nmail=5)
 
 # To extract maximum of 5 emails from inbox between June 6, 2013 to June 6, 2013
-dat2 <- edeR:::extractBetween(username="username@gmail.com",
+dat2 <- extractBetween(username="username@gmail.com",
                        password="password",
                        folder="inbox",
                        startDate="06-Jun-2013",
@@ -44,12 +44,12 @@ dat2 <- edeR:::extractBetween(username="username@gmail.com",
                        nmail=5)
 
 # To extract maximum 5 emails with the word "keyword" within subject line
-dat3 <-edeR:::extractKeyword(username="username@gmail.com",
+dat3 <-extractKeyword(username="username@gmail.com",
                       password="password",
                       kw="keyword",
                       nmail=5)       
 # To extract maximum 5 emails with the word "keyword" within body message
-dat4 <-edeR:::extractKeywordB(username="username@gmail.com",
+dat4 <-extractKeywordB(username="username@gmail.com",
                        password="password",
                        kw="keyword",
                        nmail=5)
