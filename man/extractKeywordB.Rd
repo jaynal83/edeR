@@ -39,10 +39,11 @@ Jaynal Abedin
 \code{\link{extractKeyword}}
 }
 \examples{
-# To extract maximum 5 emails with the word "predictive" within body message
-dat <-edeR:::extractKeywordB(username="emaildataextraction@gmail.com",
-                      password="emaildataextractionusingr",
-                      kw="predictive",
+\donotrun{
+# To extract maximum 5 emails with the word "keyword" within body message
+dat <-extractKeywordB(username="username@gmail.com",
+                      password="password",
+                      kw="keyword",
                       nmail=5)
+ }
 }
-
