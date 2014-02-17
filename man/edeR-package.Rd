@@ -29,7 +29,8 @@ Maintainer: Jaynal Abedin <joystatru@gmail.com>
 \keyword{ package }
 \examples{
 \dontrun{
-# Extract maximum 5 emails from the specified folder. User needs to provide his/her valid Gmail address and password.
+# Extract maximum 5 emails from the specified folder. 
+# User needs to provide his/her valid Gmail address and password.
 dat1 <- extractMbox(username="username@gmail.com",
                     password="password",
                     folder="foldar",
