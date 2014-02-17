@@ -43,7 +43,7 @@ To extract "Sent Mail", the argument is \code{folder="[Gmal]/Sent Mail"}
 \code{\link{extractBetween}}
 }
 \examples{
-\donotrun{
+\dontrun{
 # Extract maximum 5 emails from the specified folder
 dat<-extractMbox(username="username@gmail.com",
                  password="password",
