@@ -39,7 +39,7 @@ Jaynal Abedin
 \code{\link{extractKeyword}}
 }
 \examples{
-\donotrun{
+\dontrun{
 # To extract maximum 5 emails with the word "keyword" within body message
 dat <-extractKeywordB(username="username@gmail.com",
                       password="password",
