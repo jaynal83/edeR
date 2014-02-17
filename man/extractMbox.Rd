@@ -43,10 +43,11 @@ To extract "Sent Mail", the argument is \code{folder="[Gmal]/Sent Mail"}
 \code{\link{extractBetween}}
 }
 \examples{
-# Extract maximum 5 emails from TSG folder
-dat<-edeR:::extractMbox(username="emaildataextraction@gmail.com",
-                 password="emaildataextractionusingr",
-                 folder="TSG",
+\donotrun{
+# Extract maximum 5 emails from the specified folder
+dat<-extractMbox(username="username@gmail.com",
+                 password="password",
+                 folder="folder",
                  nmail=5)
+ }
 }
-
