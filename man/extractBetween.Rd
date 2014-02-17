@@ -49,10 +49,12 @@ To extract "Sent Mail", the argument is \code{folder="[Gmal]/Sent Mail"}
 \code{\link{extractMbox}}
 }
 \examples{
+\donotrun{
 # To extract maximum of 5 emails from inbox between June 6, 2013 to June 6, 2013
-dat <-edeR:::extractBetween(username="emaildataextraction@gmail.com",
-                     password="emaildataextractionusingr",
+dat <-extractBetween(username="username@gmail.com",
+                     password="password",
                      folder="INBOX",
                      startDate="06-Jun-2013",
                      endDate="06-Jun-2013",
                      nmail=5)}
+}                
