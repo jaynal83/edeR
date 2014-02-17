@@ -16,7 +16,7 @@ Type: \tab Package\cr
 Depends: \tab rJava, rjson, rJython\cr
 System dependency: \tab Java runtime environment\cr
 Version: \tab 1.0.0\cr
-Date: \tab 2014-02-16\cr
+Date: \tab 2014-02-17\cr
 License: \tab GPL-2\cr
 }
 %~~ An overview of how to use the package, including the most important functions ~~
@@ -28,28 +28,30 @@ Maintainer: Jaynal Abedin <joystatru@gmail.com>
 }
 \keyword{ package }
 \examples{
-# Extract maximum 5 emails from TSG folder
-dat1 <- edeR:::extractMbox(username="emaildataextraction@gmail.com",
-                    password="emaildataextractionusingr",
-                    folder="TSG",
+\donotrun{
+# Extract maximum 5 emails from the specified folder. User needs to provide his/her valid Gmail address and password.
+dat1 <- extractMbox(username="username@gmail.com",
+                    password="password",
+                    folder="foldar",
                     nmail=5)
 
 # To extract maximum of 5 emails from inbox between June 6, 2013 to June 6, 2013
-dat2 <- edeR:::extractBetween(username="emaildataextraction@gmail.com",
-                       password="emaildataextractionusingr",
-                       folder="inBoX",
+dat2 <- edeR:::extractBetween(username="username@gmail.com",
+                       password="password",
+                       folder="inbox",
                        startDate="06-Jun-2013",
                        endDate="06-Jun-2013",
                        nmail=5)
 
-# To extract maximum 5 emails with the word "predictive" within subject line
-dat3 <-edeR:::extractKeyword(username="emaildataextraction@gmail.com",
-                      password="emaildataextractionusingr",
-                      kw="predictive",
+# To extract maximum 5 emails with the word "keyword" within subject line
+dat3 <-edeR:::extractKeyword(username="username@gmail.com",
+                      password="password",
+                      kw="keyword",
                       nmail=5)       
-# To extract maximum 5 emails with the word "predictive" within body message
-dat4 <-edeR:::extractKeywordB(username="emaildataextraction@gmail.com",
-                       password="emaildataextractionusingr",
-                       kw="predictive",
+# To extract maximum 5 emails with the word "keyword" within body message
+dat4 <-edeR:::extractKeywordB(username="username@gmail.com",
+                       password="password",
+                       kw="keyword",
                        nmail=5)
+ }
 }
