@@ -1,5 +1,5 @@
 extractBetween <-
-function(username,password,folder,startDate,endDate,nmail=-1)
+function(username,password,folder,startDate,endDate,nmail=-1,cc=FALSE)
 {
  #...Initializing "imaplib" from python
  imap<-rJython(modules="imaplib")
@@ -24,7 +24,7 @@ function(username,password,folder,startDate,endDate,nmail=-1)
   nmail<-nmsg
  #...Initialize email data frame
  email_data <- NULL
-
+ cc_addrs <- list()
  #...Setting counter so that we can control how many message to extract
  counter<-1
  for(uid in msg_uid)
@@ -47,6 +47,18 @@ function(username,password,folder,startDate,endDate,nmail=-1)
    addrs_to <- sub("addrs_to: ", "", addrs_to, ignore.case = TRUE)
    addrs_to <- grep("@", addrs_to, value = TRUE)
 
+   #... Extracting addresses from CC field
+   if(isTRUE(cc)){
+     imap$exec(paste("stts,addr_cc=user_email.uid('fetch',\'",uid,"\','(BODY[HEADER.FIELDS (CC)])')",sep=""))
+     imap$exec("addr_cc = addr_cc[0][1]")
+     addrs_cc <- .jstrVal(imap$get("addr_cc"))
+     addrs_cc <- unlist(strsplit(addrs_cc, "[<>\r\n, \"]"))
+     addrs_cc <- sub("addrs_cc: ", "", addrs_cc, ignore.case = TRUE)
+     addrs_cc <- grep("@", addrs_cc, value = TRUE)
+     cc_addrs[[counter]] <- addrs_cc
+   }
+   
+   
    #...Extracting email subject line
    imap$exec(paste("stts,subj=user_email.uid('fetch',\'",uid,"\','(BODY[HEADER.FIELDS (SUBJECT)])')",sep=""))
    imap$exec("subj = subj[0][1]")
@@ -75,6 +87,10 @@ function(username,password,folder,startDate,endDate,nmail=-1)
  }
  #...Logging out from the account
  imap$exec("user_email.shutdown()")
- outlist <- list(n_message=nmsg,data=email_data)
+ if(isTRUE(cc)){
+   outlist <- list(n_message=nmsg,data=email_data, cc_addrs = cc_addrs)
+ }
+ else 
+   outlist <- list(n_message=nmsg,data=email_data)
  return(outlist)
 }
